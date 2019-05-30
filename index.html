@@ -6,7 +6,7 @@
     <link rel="stylesheet" media="screen" href="style.css" type="text/css"/>
     <script type="text/javascript" src="FileSaver.js"></script>
 </head>
-<body onKeyDown="handleShortcuts();">
+<body onKeyDown="handleShortcuts();" onContextMenu="return false;">
     <textarea id="text" onKeyDown="preventEdit();" onpaste="handlePaste();" oncut="return false;"></textarea>
 
     <div id="help">
