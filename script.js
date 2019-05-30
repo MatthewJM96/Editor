@@ -59,8 +59,6 @@ function AnimationManager(_duration, _stepSize, _startWidth, _endWidth, _startHe
     var totalSteps = _duration / _stepSize;
 
     function frame() {
-        console.log(_selector + " - " + timerID);
-
         if (complete && !_entity.show) complete = false;
         if (complete &&  _entity.show) {
             clearInterval(timerID);
